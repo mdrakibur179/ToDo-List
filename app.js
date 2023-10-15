@@ -7,7 +7,7 @@ const app = express();
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://127.0.0.1/todolistDB");
+mongoose.connect("mongodb+srv://mdrakibur179:u0Cp0vcSKFmGARbV@cluster0.gvaus3s.mongodb.net/?retryWrites=true&w=majority");
 
 const itemScema = new mongoose.Schema({
   name: String,
